@@ -665,6 +665,16 @@ body {
   }
 }
 
+@media (max-width: 768px) {
+  .master-image-box {
+    width: 33.33%;
+    max-width: 150px;
+  }
+  .master-title-overlay {
+    display: none;
+  }
+}
+
 /* 8. The Sanctuary Section */
 #sanctuary {
   position: relative;
