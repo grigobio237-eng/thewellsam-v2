@@ -222,50 +222,29 @@ function initScrollReveal() {
 
 const cardDetailsData = [
   {
-    tag: 'DEEP ANTI-AGING',
-    title: '근본적인 젊음의 재건',
+    tag: 'PREMIUM ANTI-AGING',
+    title: '전신 항노화 케어',
     subtitle: 'Cellular Rejuvenation',
-    concept: '이 치료는 피부 겉면의 처리가 아닌, 진피층 깊은 곳의 구조적 복원에 초점을 맞춥니다.',
+    concept: '피부 겉면만 일시적으로 당겨주는 시술이 아닙니다. 노화로 저하된 내 몸속 세포를 젊고 건강한 상태로 되돌려, 피부 탄력은 물론 전신의 활력을 함께 되찾아주는 근본적인 안티에이징 치료입니다.',
+    conceptImage: '/detail1-concept.webp',
     mechanisms: [
       {
-        title: '파라크라인 효과 (주변분비 작용)',
-        desc: '투여된 줄기세포는 노화로 인해 활동을 멈춘 진피층의 \'섬유아세포(Fibroblast)\'를 깨우는 강력한 성장인자(TGF-β, FGF 등)를 분비합니다.'
+        title: '잠든 재생 세포 깨우기 (파라크라인 효과)',
+        desc: '우리 몸에 들어간 줄기세포는 노화로 인해 활동을 멈춘 피부와 조직의 세포들에게 신호를 보내 다시 일하도록 만듭니다. 잠들어 있던 세포들이 스스로 깨어나 손상된 부위를 복구하기 시작합니다.',
+        image: '/detail1-mechanism1.webp'
       },
       {
-        title: '자가 단백질 합성',
-        desc: '외부에서 인공 물질을 주입하는 것이 아니라, 내 몸의 세포가 스스로 최고급 콜라겐과 엘라스틴을 폭발적으로 생산하도록 유도하여 무너진 피부의 지지대를 근본적으로 재건합니다.'
+        title: '천연 콜라겐 자가 생성',
+        desc: '외부에서 인공 물질(필러 등)을 억지로 주입하지 않습니다. 내 몸의 세포가 스스로 양질의 콜라겐과 엘라스틴을 대량으로 만들어내도록 유도하여, 탄력을 잃고 무너진 피부 속 지지대를 튼튼하게 다시 세웁니다.',
+        image: '/detail1-mechanism2.webp'
       }
     ],
     effects: [
-      '안면 구조의 자연스러운 리프팅 및 볼륨 복원',
-      '피부 진피층 두께 증가 및 진성 주름 개선'
-    ],
-    visualSvg: `
-      <svg class="visual-svg" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="200" cy="200" r="180" stroke="rgba(255,255,255,0.02)" stroke-width="1"/>
-        <circle cx="200" cy="200" r="120" stroke="rgba(255,255,255,0.02)" stroke-width="1"/>
-        
-        <g class="cell-pulse">
-          <circle cx="200" cy="200" r="30" fill="rgba(212, 175, 55, 0.1)" stroke="var(--color-gold)" stroke-width="1.5" class="glowing-node"/>
-          <circle cx="200" cy="200" r="10" fill="var(--color-gold)"/>
-        </g>
-        
-        <circle cx="200" cy="200" r="4" fill="var(--color-gold)" class="growth-factor" style="--dx: 110px; --dy: -70px; animation-delay: 0s;"/>
-        <circle cx="200" cy="200" r="3" fill="var(--color-gold)" class="growth-factor" style="--dx: -120px; --dy: -90px; animation-delay: 1.2s;"/>
-        <circle cx="200" cy="200" r="5" fill="var(--color-gold)" class="growth-factor" style="--dx: 90px; --dy: 100px; animation-delay: 2.4s;"/>
-        <circle cx="200" cy="200" r="4" fill="var(--color-gold)" class="growth-factor" style="--dx: -80px; --dy: 120px; animation-delay: 3.6s;"/>
-        
-        <path d="M 70 120 Q 90 90 120 110 Q 100 130 70 120 Z" fill="rgba(255,255,255,0.01)" stroke="rgba(255,255,255,0.15)" stroke-width="1" class="fibroblast-awaken" style="animation-delay: 1s;"/>
-        <path d="M 290 100 Q 320 120 310 150 Q 280 130 290 100 Z" fill="rgba(255,255,255,0.01)" stroke="rgba(255,255,255,0.15)" stroke-width="1" class="fibroblast-awaken" style="animation-delay: 0s;"/>
-        <path d="M 280 280 Q 290 310 260 320 Q 250 290 280 280 Z" fill="rgba(255,255,255,0.01)" stroke="rgba(255,255,255,0.15)" stroke-width="1" class="fibroblast-awaken" style="animation-delay: 2s;"/>
-        <path d="M 100 300 Q 120 280 130 310 Q 110 320 100 300 Z" fill="rgba(255,255,255,0.01)" stroke="rgba(255,255,255,0.15)" stroke-width="1" class="fibroblast-awaken" style="animation-delay: 3s;"/>
-        
-        <path d="M 120 110 Q 200 150 290 130" stroke="var(--color-gold)" stroke-width="1.2" fill="none" class="collagen-line" style="animation-delay: 1.5s;"/>
-        <path d="M 310 150 Q 270 220 280 280" stroke="var(--color-gold)" stroke-width="1.2" fill="none" class="collagen-line" style="animation-delay: 0.5s;"/>
-        <path d="M 260 320 Q 180 280 130 310" stroke="var(--color-gold)" stroke-width="1.2" fill="none" class="collagen-line" style="animation-delay: 2.5s;"/>
-        <path d="M 100 300 Q 110 200 70 120" stroke="var(--color-gold)" stroke-width="1.2" fill="none" class="collagen-line" style="animation-delay: 3.5s;"/>
-      </svg>
-    `
+      '처진 얼굴선의 자연스러운 리프팅 및 꺼진 볼륨 복원',
+      '피부 속 두께가 증가하며 깊게 패인 주름(진성 주름) 완화',
+      '화장품으로 채울 수 없는 피부 속부터 우러나오는 윤기(광채)',
+      '전반적인 신체 컨디션 회복 및 노화로 인한 무기력함 개선'
+    ]
   },
   {
     tag: 'SMART REGENERATION',
@@ -415,14 +394,7 @@ function initDetailPages() {
 
   const closeBtn = document.getElementById('detail-close-btn');
   const overlayBg = overlay.querySelector('.detail-overlay-bg');
-  
-  const tagEl = document.getElementById('detail-tag');
-  const titleEl = document.getElementById('detail-title');
-  const subtitleEl = document.getElementById('detail-subtitle');
-  const conceptEl = document.getElementById('detail-concept');
-  const mechanismsEl = document.getElementById('detail-mechanisms');
-  const effectsEl = document.getElementById('detail-effects');
-  const visualContainer = document.getElementById('detail-visual-container');
+  const dynamicContent = document.getElementById('detail-dynamic-content');
 
   const cards = document.querySelectorAll('.essence-card');
 
@@ -434,35 +406,110 @@ function initDetailPages() {
 
       const data = cardDetailsData[index];
 
-      // Inject Content
-      tagEl.textContent = data.tag;
-      titleEl.textContent = data.title;
-      subtitleEl.textContent = data.subtitle;
-      conceptEl.textContent = data.concept;
+      // Check if it's the new landing page format (has conceptImage)
+      if (data.conceptImage) {
+        dynamicContent.classList.add('scroll-mode');
+        
+        let mechanismsHtml = '';
+        data.mechanisms.forEach(mech => {
+          mechanismsHtml += `
+            <div class="mechanism-item">
+              <span class="mechanism-item-title">${mech.title}</span>
+              <p class="mechanism-item-desc">${mech.desc}</p>
+              ${mech.image ? `<img src="${mech.image}" class="detail-section-img" alt="${mech.title}">` : ''}
+            </div>
+          `;
+        });
 
-      // Inject Mechanisms
-      mechanismsEl.innerHTML = '';
-      data.mechanisms.forEach(mech => {
-        const item = document.createElement('div');
-        item.className = 'mechanism-item';
-        item.innerHTML = `
-          <span class="mechanism-item-title">${mech.title}</span>
-          <p class="mechanism-item-desc">${mech.desc}</p>
+        let effectsHtml = '';
+        data.effects.forEach(eff => {
+          effectsHtml += `<li class="effect-item">${eff}</li>`;
+        });
+
+        dynamicContent.innerHTML = `
+          <div class="detail-scroll-inner">
+            <span class="detail-tag">${data.tag}</span>
+            <h2 class="detail-title text-serif">${data.title}</h2>
+            <span class="detail-subtitle">${data.subtitle}</span>
+            
+            <div class="detail-concept-box">
+              <span class="concept-label">TREATMENT CONCEPT</span>
+              <p class="detail-concept">${data.concept}</p>
+            </div>
+            
+            <img src="${data.conceptImage}" class="detail-hero-img" alt="Treatment Concept">
+
+            <div class="detail-sections">
+              <div class="detail-section">
+                <h4 class="section-title text-serif">치료 메커니즘 (The Science)</h4>
+                <div class="mechanism-list">
+                  ${mechanismsHtml}
+                </div>
+              </div>
+
+              <div class="detail-section">
+                <h4 class="section-title text-serif">전문적 기대 효과</h4>
+                <ul class="effect-list">
+                  ${effectsHtml}
+                </ul>
+              </div>
+            </div>
+          </div>
         `;
-        mechanismsEl.appendChild(item);
-      });
+      } else {
+        // Legacy Split Layout
+        dynamicContent.classList.remove('scroll-mode');
+        
+        let mechanismsHtml = '';
+        data.mechanisms.forEach(mech => {
+          mechanismsHtml += `
+            <div class="mechanism-item">
+              <span class="mechanism-item-title">${mech.title}</span>
+              <p class="mechanism-item-desc">${mech.desc}</p>
+            </div>
+          `;
+        });
 
-      // Inject Expected Effects
-      effectsEl.innerHTML = '';
-      data.effects.forEach(eff => {
-        const item = document.createElement('li');
-        item.className = 'effect-item';
-        item.textContent = eff;
-        effectsEl.appendChild(item);
-      });
+        let effectsHtml = '';
+        data.effects.forEach(eff => {
+          effectsHtml += `<li class="effect-item">${eff}</li>`;
+        });
 
-      // Inject SVG Infographic
-      visualContainer.innerHTML = data.visualSvg;
+        dynamicContent.innerHTML = `
+          <div class="detail-content-side">
+            <span class="detail-tag">${data.tag}</span>
+            <h2 class="detail-title text-serif">${data.title}</h2>
+            <span class="detail-subtitle">${data.subtitle}</span>
+
+            <div class="detail-concept-box">
+              <span class="concept-label">TREATMENT CONCEPT</span>
+              <p class="detail-concept">${data.concept}</p>
+            </div>
+
+            <div class="detail-sections">
+              <div class="detail-section">
+                <h4 class="section-title text-serif">치료 메커니즘 (The Science)</h4>
+                <div class="mechanism-list">
+                  ${mechanismsHtml}
+                </div>
+              </div>
+
+              <div class="detail-section">
+                <h4 class="section-title text-serif">전문적 기대 효과</h4>
+                <ul class="effect-list">
+                  ${effectsHtml}
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="detail-visual-side">
+            <div class="visual-canvas-container">
+              ${data.visualSvg}
+            </div>
+          </div>
+        `;
+      }
 
       // Show Overlay
       overlay.classList.add('active');
@@ -487,10 +534,10 @@ function initDetailPages() {
     document.body.style.width = '';
     window.scrollTo(0, scrollY);
     
-    // Clear SVG after transition to save resources
+    // Clear dynamic content after transition to save resources
     setTimeout(() => {
       if (!overlay.classList.contains('active')) {
-        visualContainer.innerHTML = '';
+        dynamicContent.innerHTML = '';
       }
     }, 500);
   }
