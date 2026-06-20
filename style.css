@@ -482,6 +482,8 @@ body {
   font-weight: 400;
   color: var(--color-text-dark);
   margin-bottom: 8px;
+  word-break: keep-all;
+  overflow-wrap: break-word;
 }
 
 .card-subtitle {
@@ -499,6 +501,8 @@ body {
   line-height: 1.7;
   color: var(--color-text-muted-dark);
   font-weight: 300;
+  word-break: keep-all;
+  overflow-wrap: break-word;
 }
 
 @media (max-width: 1200px) {
