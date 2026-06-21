@@ -2523,3 +2523,25 @@ main > section:first-of-type:not(#hero) {
     padding-top: 120px;
   }
 }
+
+/* K-Beauty Specific Mobile Optimizations */
+@media (max-width: 768px) {
+  .kbeauty-disclaimer {
+    margin: 2rem auto 0;
+    padding: 1.5rem;
+  }
+  .disclaimer-header {
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 1.5rem;
+  }
+  .disclaimer-header h3 {
+    font-size: 1.1rem;
+  }
+  .disclaimer-list li {
+    font-size: 0.95rem;
+  }
+  .line-left, .line-right {
+    display: none; /* Hide lines on mobile for cleaner look */
+  }
+}
