@@ -1093,48 +1093,6 @@ footer {
   overflow: hidden;
 }
 
-.detail-layout.scroll-mode {
-  display: block;
-  grid-template-columns: none;
-  overflow-y: auto;
-  scrollbar-width: thin;
-  scrollbar-color: rgba(255, 255, 255, 0.1) transparent;
-}
-
-.detail-layout.scroll-mode::-webkit-scrollbar {
-  width: 4px;
-}
-.detail-layout.scroll-mode::-webkit-scrollbar-thumb {
-  background-color: rgba(255, 255, 255, 0.08);
-  border-radius: 4px;
-}
-
-.detail-scroll-inner {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 80px 20px;
-}
-
-.detail-hero-img {
-  width: 100%;
-  height: auto;
-  border-radius: 12px;
-  margin: 40px 0;
-  box-shadow: 0 15px 40px rgba(0,0,0,0.5);
-  display: block;
-  object-fit: cover;
-}
-
-.detail-section-img {
-  width: 100%;
-  height: auto;
-  border-radius: 12px;
-  margin: 25px 0 50px 0;
-  box-shadow: 0 15px 30px rgba(0,0,0,0.3);
-  display: block;
-  object-fit: cover;
-}
-
 .detail-content-side {
   padding: 80px 80px 80px 100px;
   overflow-y: auto;
