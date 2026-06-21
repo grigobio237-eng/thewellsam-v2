@@ -1993,7 +1993,7 @@ footer {
   gap: 12px;
 }
 .checklist-items li {
-  color: var(--color-text-muted);
+  color: rgba(255, 255, 255, 0.8);
   font-size: 0.95rem;
   display: flex;
   align-items: flex-start;
