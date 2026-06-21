@@ -519,10 +519,16 @@ body {
 @media (max-width: 992px) {
   .hero-bg-image {
     width: 100%;
-    opacity: 0.3; /* blend into background */
+    height: 50%;
+    top: auto;
+    bottom: 0;
+    transform: none;
+    opacity: 0.15; /* make it very faint on mobile */
+    background-size: contain;
+    background-position: bottom right;
   }
   .hero-bg-image::before {
-    background: linear-gradient(to bottom, var(--color-bg-light) 0%, rgba(246,245,242,0.5) 100%);
+    background: linear-gradient(to top, var(--color-bg-light) 0%, rgba(246,245,242,0) 100%);
   }
   .hero-content-left {
     width: 100%;
@@ -1691,4 +1697,11 @@ footer {
 }
 .flow-step.highlight-step .step-info h4 {
   color: var(--color-gold);
+}
+
+
+@media (max-width: 768px) {
+  .desktop-only {
+    display: none;
+  }
 }
