@@ -297,60 +297,29 @@ const cardDetailsData = [
     ]
   },
   {
-    tag: 'PREMIUM SKIN BEAUTY',
-    title: '고품격 피부 미학의 완성',
-    subtitle: 'Premium Skin Aesthetics',
-    concept: '피부 표면의 즉각적인 빛과 결 개선에 초점을 맞추어, 기미와 색소 침착을 근본적으로 케어하고 투명한 귀족적 광채를 선사합니다.',
+    tag: 'PREMIUM SKIN AESTHETICS',
+    title: '줄기세포 피부 재생술',
+    subtitle: 'Ultimate Skin Rejuvenation',
+    concept: '화장으로 가릴 수 없는 깊은 세월의 흔적과 피부 칙칙함, 이제 겉이 아닌 속부터 완벽하게 채웁니다. 줄기세포에 담긴 수백 가지의 강력한 성장인자가 피부 가장 깊은 곳까지 스며들어 무너진 탄력 기둥을 바로 세우고, 당신의 피부 본연이 가진 가장 맑고 눈부신 귀족적 광채를 깨워냅니다.',
+    conceptImage: '/detail4-concept.webp',
     mechanisms: [
       {
-        title: '엑소좀(Exosome) 침투 기술',
-        desc: '줄기세포 배양액의 핵심 유효 성분인 \'엑소좀(나노 크기의 세포 간 신호 전달 물질)\'을 피부 깊숙이 침투시킵니다. 이는 세포 간의 소통을 원활하게 하여 무너진 피부 장벽을 빠르게 복구합니다.'
+        title: '진피층 탄력 기둥줄기 재건',
+        desc: '단순히 수분을 채우는 것을 넘어섭니다. 줄기세포 성장인자는 피부의 뼈대 역할을 하는 진피층의 콜라겐과 엘라스틴 섬유망을 젊은 시절의 상태로 촘촘하고 단단하게 재조립하여, 처진 피부를 쫀쫀하게 끌어올립니다.',
+        image: '/detail4-mechanism1.webp'
       },
       {
-        title: '색소 침착 억제',
-        desc: '자외선과 노화로 인해 과다 생성되는 멜라닌 색소의 합성 경로(Tyrosinase 활성)를 차단하고, 표피의 턴오버(Turn-over) 주기를 정상화하여 이미 침착된 기미와 잡티를 빠르게 탈락시킵니다.'
+        title: '맑은 유리알 피부를 위한 색소 리셋',
+        desc: '칙칙한 안색과 기미, 잡티의 원인이 되는 검은 색소(멜라닌)가 퍼지는 것을 강력하게 차단합니다. 피부 세포의 교체 주기를 10대 때처럼 빠르게 앞당겨, 묵은 각질과 색소가 자연스럽게 탈락하고 티 없이 맑고 투명한 새 피부가 차오르게 합니다.',
+        image: '/detail4-mechanism2.webp'
       }
     ],
     effects: [
-      '기미, 난치성 색소 침착 개선 및 균일한 화이트닝 효과',
-      '넓어진 모공 축소 및 매끄러운 도자기 피부결 완성'
-    ],
-    visualSvg: `
-      <svg class="visual-svg" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <line x1="50" y1="120" x2="350" y2="120" stroke="rgba(255,255,255,0.15)" stroke-width="1.2" class="skin-barrier-line" stroke-linecap="round"/>
-        <line x1="50" y1="200" x2="350" y2="200" stroke="rgba(255,255,255,0.06)" stroke-width="1" stroke-dasharray="5 3"/>
-        <line x1="50" y1="280" x2="350" y2="280" stroke="rgba(255,255,255,0.06)" stroke-width="1" stroke-dasharray="5 3"/>
-        
-        <text x="60" y="105" fill="rgba(255,255,255,0.25)" font-size="8" font-family="sans-serif" letter-spacing="1">EPIDERMIS (표피)</text>
-        <text x="60" y="185" fill="rgba(255,255,255,0.25)" font-size="8" font-family="sans-serif" letter-spacing="1">DERMIS (진피)</text>
-
-        <g class="exosome-node" style="animation-delay: 0s; --dx: 120px;">
-          <circle cx="120" cy="100" r="6" fill="rgba(255,255,255,0.12)" stroke="var(--color-gold)" stroke-width="1" class="glowing-node"/>
-          <circle cx="120" cy="100" r="2" fill="var(--color-gold)"/>
-        </g>
-        <g class="exosome-node" style="animation-delay: 1.4s; --dx: 220px;">
-          <circle cx="220" cy="100" r="8" fill="rgba(255,255,255,0.12)" stroke="rgba(255,255,255,0.5)" stroke-width="1" style="filter: drop-shadow(0 0 5px rgba(255,255,255,0.4));"/>
-          <circle cx="220" cy="100" r="2.5" fill="#fff"/>
-        </g>
-        <g class="exosome-node" style="animation-delay: 2.6s; --dx: 280px;">
-          <circle cx="280" cy="100" r="6" fill="rgba(255,255,255,0.12)" stroke="var(--color-gold)" stroke-width="1" class="glowing-node"/>
-          <circle cx="280" cy="100" r="2" fill="var(--color-gold)"/>
-        </g>
-
-        <g class="melanin-target" style="animation-delay: 0s;">
-          <circle cx="120" cy="260" r="10" fill="none" stroke="rgba(212,175,55,0.12)" stroke-width="1" stroke-dasharray="2 2"/>
-          <circle cx="120" cy="260" r="4" fill="rgba(130, 95, 45, 0.35)" stroke="rgba(130, 95, 45, 0.7)" stroke-width="1"/>
-        </g>
-        <g class="melanin-target" style="animation-delay: 1.4s;">
-          <circle cx="220" cy="260" r="14" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="1" stroke-dasharray="2 2"/>
-          <circle cx="220" cy="260" r="5" fill="rgba(130, 95, 45, 0.35)" stroke="rgba(130, 95, 45, 0.7)" stroke-width="1"/>
-        </g>
-        <g class="melanin-target" style="animation-delay: 2.6s;">
-          <circle cx="280" cy="260" r="10" fill="none" stroke="rgba(212,175,55,0.12)" stroke-width="1" stroke-dasharray="2 2"/>
-          <circle cx="280" cy="260" r="4" fill="rgba(130, 95, 45, 0.35)" stroke="rgba(130, 95, 45, 0.7)" stroke-width="1"/>
-        </g>
-      </svg>
-    `
+      '자연스럽게 차오르는 얼굴 볼륨 및 안면 리프팅 효과',
+      '화장품으로 구현할 수 없는 피부 속부터 우러나는 고급스러운 물광',
+      '오랜 시간 자리 잡은 기미, 깊은 주름, 색소 침착의 근본적 지우개 효과',
+      '얇고 예민해진 피부 장벽을 튼튼하고 건강하게 복구'
+    ]
   }
 ];
 
