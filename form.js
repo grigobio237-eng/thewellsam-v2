@@ -1,4 +1,4 @@
-const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbzngGtQ17CyjrbDSPKnfGKh1KqFAlXgGQKZRaS4Y4dxCyNb-SudXxkpPBcOeDmLEm1kTQ/exec";
+const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwpEszmtAJXLU4m0HxMJwFH_PdbsbYa38nHRCr3U8GO8eqf0qVZxneVroMiGX2ZoIBpQQ/exec";
 
 let step = 1;
 const totalSteps = 12;
