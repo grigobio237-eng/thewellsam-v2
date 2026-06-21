@@ -40,22 +40,62 @@
 
   <main>
     <!-- 1. Hero Section (Visual Hook) -->
-    <section id="hero">
-      <canvas id="hero-particles"></canvas>
-      <div class="hero-overlay"></div>
-      <div class="hero-content">
-        <span class="hero-subtitle fade-in-up">The Masterpiece of Cellular Regeneration</span>
-        <h1 class="hero-title fade-in-up delay-1">
-          당신의 시간이<br>
-          <span class="text-serif italic gold-accent">다시 흐르기 시작합니다.</span>
-        </h1>
-        <p class="hero-desc fade-in-up delay-2">
-          근본적인 재생의 마스터피스, 더웰샘 줄기세포.
-        </p>
-      </div>
-      <div class="scroll-indicator fade-in-up delay-3">
-        <span class="scroll-text">SCROLL</span>
-        <div class="scroll-line"></div>
+    <section id="hero" class="hero-light-theme">
+      <!-- Background Image for Hero -->
+      <div class="hero-bg-image" style="background-image: url('/hero-model.webp');"></div>
+      
+      <div class="hero-container section-container">
+        <div class="hero-content-left reveal-up">
+          <div class="hero-brand">
+            <span class="logo-en gold-text text-serif">THE WELLSAM</span>
+            <span class="hero-subtitle">프리미엄 케어 상담 안내</span>
+          </div>
+          
+          <h1 class="hero-title text-serif">
+            당신의 몸이 보내는 신호를<br>다시 확인해야 할 시간
+          </h1>
+          
+          <p class="hero-desc">
+            피로, 관절 불편, 피부 변화, 항노화 고민은 사람마다 원인과 상태가 다르게 나타납니다.<br>
+            더웰샘은 현재의 상태와 상담 목표를 먼저 확인하고, 의료진 상담을 통해<br>개인별 방향을 안내해 드립니다.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="https://www.thewellsam.com" class="btn btn-luxury-gold" target="_blank" rel="noopener noreferrer">
+              더웰샘 공식 사이트에서 자세히 보기 <span class="arrow">→</span>
+            </a>
+            <button class="btn-text-link" id="hero-consultation-btn">
+              <span class="icon-clock">🕒</span> 상담 전 60초 체크 안내 <span class="arrow">></span>
+            </button>
+          </div>
+
+          <!-- Two Tracks -->
+          <div class="hero-tracks">
+            <div class="track-card">
+              <div class="track-icon">🧬</div>
+              <div class="track-info">
+                <h3 class="track-title text-serif">줄기세포 상담</h3>
+                <span class="track-subtitle">더웰샘의 핵심 축</span>
+                <p class="track-desc">전신 컨디션 개선과 항노화, 재생에 초점을 둔 프리미엄 의료 상담의 중심입니다.</p>
+              </div>
+            </div>
+            
+            <div class="track-card">
+              <div class="track-icon">✨</div>
+              <div class="track-info">
+                <h3 class="track-title text-serif">K-Beauty 상담</h3>
+                <span class="track-subtitle">보다 쉽게 시작하는 축</span>
+                <p class="track-desc">피부 미용, 탄력, 윤곽, 다이어트 등 K-Beauty 중심의 프리미엄 상담입니다.</p>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Disclaimer -->
+          <div class="hero-disclaimer">
+            <span class="shield-icon">🛡️</span>
+            <p>본 브로셔는 더웰샘 상담 안내용 자료입니다.<br>실제 진료, 검사, 치료 및 진행 여부는 의료진 상담 후 개인 상태에 따라 결정됩니다.</p>
+          </div>
+        </div>
       </div>
     </section>
 
