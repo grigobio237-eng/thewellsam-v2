@@ -59,35 +59,37 @@ function initScrollReveal() {
 const cardDetailsData = [
   {
     tag: 'PREMIUM ANTI-AGING',
-    title: '전신 항노화 케어',
+    title: '전신 항노화 상담',
     subtitle: 'Cellular Rejuvenation',
-    concept: '피부 겉면만 일시적으로 당겨주는 시술이 아닙니다. 노화로 저하된 내 몸속 세포를 젊고 건강한 상태로 되돌려, 피부 탄력은 물론 전신의 활력을 함께 되찾아주는 근본적인 안티에이징 치료입니다.',
+    concept: '단순히 겉보기를 젊게 만드는 것이 아닙니다. 노화로 인해 기능이 저하된 내 몸속 전신의 세포를 깨워, 신체 내부의 활력과 건강한 컨디션을 근본적으로 되찾아주는 전신 안티에이징 치료입니다.',
     conceptImage: '/detail1-concept.webp',
+    checklist: ['피로 지속 기간', '수면 상태', '전신 컨디션 변화', '기존 질환 및 복용 약물', '상담 목적'],
     mechanisms: [
       {
         title: '잠든 재생 세포 깨우기 (파라크라인 효과)',
-        desc: '우리 몸에 들어간 줄기세포는 노화로 인해 활동을 멈춘 피부와 조직의 세포들에게 신호를 보내 다시 일하도록 만듭니다. 잠들어 있던 세포들이 스스로 깨어나 손상된 부위를 복구하기 시작합니다.',
+        desc: '우리 몸에 들어간 줄기세포는 노화로 인해 활동을 멈춘 전신 장기와 조직의 세포들에게 신호를 보내 다시 일하도록 만듭니다. 잠들어 있던 세포들이 스스로 깨어나 저하된 신체 기능을 복구하기 시작합니다.',
         image: '/detail1-mechanism1.webp'
       },
       {
-        title: '천연 콜라겐 자가 생성',
-        desc: '외부에서 인공 물질(필러 등)을 억지로 주입하지 않습니다. 내 몸의 세포가 스스로 양질의 콜라겐과 엘라스틴을 대량으로 만들어내도록 유도하여, 탄력을 잃고 무너진 피부 속 지지대를 튼튼하게 다시 세웁니다.',
+        title: '신체 밸런스 및 대사 정상화',
+        desc: '저하된 호르몬 밸런스와 에너지 대사를 정상 수준으로 끌어올립니다. 세포 단위에서부터 에너지가 다시 차오르게 만들어, 예전과 같은 생기와 활력을 되찾아 줍니다.',
         image: '/detail1-mechanism2.webp'
       }
     ],
     effects: [
-      '처진 얼굴선의 자연스러운 리프팅 및 꺼진 볼륨 복원',
-      '피부 속 두께가 증가하며 깊게 패인 주름(진성 주름) 완화',
-      '화장품으로 채울 수 없는 피부 속부터 우러나오는 윤기(광채)',
-      '전반적인 신체 컨디션 회복 및 노화로 인한 무기력함 개선'
+      '만성적인 무기력함 및 피로감의 획기적 개선',
+      '전반적인 신체 활력 회복 및 에너지 레벨 상승',
+      '세포 기능 활성화를 통한 노화 진행의 지연',
+      '수면의 질 개선 및 상쾌한 아침 컨디션 회복'
     ]
   },
   {
     tag: 'PAIN & JOINT REGENERATION',
-    title: '비수술 관절·통증 재생',
+    title: '관절·통증 상담',
     subtitle: 'Deep Tissue Healing',
     concept: '수술에 대한 두려움과 오랜 회복 기간 없이, 내 몸이 가진 본연의 치유력으로 손상된 조직을 다시 세웁니다. 닳고 찢겨 통증을 유발하는 관절과 인대에 줄기세포를 직접 투여하여, 염증을 잠재우고 조직 자체를 건강하게 재생시키는 근본적인 비수술 치료입니다.',
     conceptImage: '/detail2-concept.webp',
+    checklist: ['불편한 부위', '통증 지속 기간', '기존 검사 또는 치료 이력', '움직일 때 불편 정도', '수술 또는 시술 경험'],
     mechanisms: [
       {
         title: '통증의 뿌리를 찾아가는 스마트 추적 시스템',
@@ -109,10 +111,11 @@ const cardDetailsData = [
   },
   {
     tag: 'IMMUNITY & VITALITY',
-    title: '면역력 강화 및 만성피로 회복',
+    title: '면역·피로 상담',
     subtitle: 'Systemic Revitalization',
     concept: '아무리 쉬어도 풀리지 않는 무거운 몸, 수액이나 영양제로는 닿을 수 없는 피로의 근본 원인을 해결합니다. 체내에 주입된 줄기세포가 전신을 순환하며 노화되고 손상된 장기 세포를 깨우고, 무너진 신체 방어벽을 견고하게 재건하여 당신의 일상에 가볍고 맑은 활력을 되찾아 드립니다.',
     conceptImage: '/detail3-concept.webp',
+    checklist: ['피로가 심해지는 시간대', '수면의 질', '스트레스 정도', '잦은 감기 또는 염증 경험', '기존 건강검진 결과'],
     mechanisms: [
       {
         title: '전신 산소망 복구 (미세 혈관 신생)',
@@ -134,10 +137,11 @@ const cardDetailsData = [
   },
   {
     tag: 'PREMIUM SKIN AESTHETICS',
-    title: '줄기세포 피부 재생술',
+    title: '피부·항노화 상담',
     subtitle: 'Ultimate Skin Rejuvenation',
     concept: '화장으로 가릴 수 없는 깊은 세월의 흔적과 피부 칙칙함, 이제 겉이 아닌 속부터 완벽하게 채웁니다. 줄기세포에 담긴 수백 가지의 강력한 성장인자가 피부 가장 깊은 곳까지 스며들어 무너진 탄력 기둥을 바로 세우고, 당신의 피부 본연이 가진 가장 맑고 눈부신 귀족적 광채를 깨워냅니다.',
     conceptImage: '/detail4-concept.webp',
+    checklist: ['피부 탄력 저하', '주름 또는 피부 톤 변화', '피부 시술 이력', '생활습관과 수면', '원하는 변화의 방향'],
     mechanisms: [
       {
         title: '진피층 탄력 기둥줄기 재건',
@@ -197,6 +201,18 @@ function initDetailPages() {
           effectsHtml += `<li class="effect-item">${eff}</li>`;
         });
 
+        let checklistHtml = '';
+        if (data.checklist) {
+          checklistHtml = `
+            <div class="detail-checklist">
+              <h4 class="section-title text-serif">상담 점검 항목</h4>
+              <ul class="checklist-items">
+                ${data.checklist.map(item => `<li><span class="check-icon">✔</span> ${item}</li>`).join('')}
+              </ul>
+            </div>
+          `;
+        }
+
         dynamicContent.innerHTML = `
           <div class="detail-scroll-inner">
             <span class="detail-tag">${data.tag}</span>
@@ -209,6 +225,8 @@ function initDetailPages() {
             </div>
             
             <img src="${data.conceptImage}" class="detail-hero-img" alt="Treatment Concept">
+
+            ${checklistHtml}
 
             <div class="detail-sections">
               <div class="detail-section">
@@ -224,6 +242,10 @@ function initDetailPages() {
                   ${effectsHtml}
                 </ul>
               </div>
+            </div>
+            
+            <div class="detail-action-container">
+              <button class="detail-cta-btn" onclick="openConsultationForm('${index}')">내 상태 점검해보기 (상담 질문지)</button>
             </div>
           </div>
         `;
@@ -328,3 +350,24 @@ function initDetailPages() {
     }
   });
 }
+
+
+window.openConsultationForm = function(indexStr) {
+  const detailModal = document.getElementById('detail-overlay');
+  if (detailModal) {
+    detailModal.classList.remove('active');
+    document.body.style.overflow = '';
+  }
+
+  const cats = ['STEM_1', 'STEM_2', 'STEM_3', 'STEM_4'];
+  const subCat = cats[parseInt(indexStr)] || 'STEM_1';
+
+  if (typeof formData !== 'undefined') {
+    formData.mainCategory = 'STEM';
+    formData.subCategory = subCat;
+  }
+
+  if (typeof window.openModal === 'function') {
+    window.openModal();
+  }
+};
