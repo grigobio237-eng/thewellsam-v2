@@ -247,48 +247,48 @@ function renderStep() {
         <div class="cf-space-y-4">
           <div>
             <label class="cf-label">성함</label>
-            <input type="text" class="cf-input" placeholder="홍길동" value="\${formData.name}" onchange="updateData('name', this.value)">
+            <input type="text" class="cf-input" placeholder="홍길동" value="${formData.name}" onchange="updateData('name', this.value)">
           </div>
           <div class="cf-flex-gap-4">
             <div style="flex:1;">
               <label class="cf-label">연령대</label>
               <select class="cf-input" onchange="updateData('ageGroup', this.value)" style="cursor: pointer; appearance: none; background: transparent url('data:image/svg+xml;utf8,<svg xmlns=\\'http://www.w3.org/2000/svg\\' width=\\'24\\' height=\\'24\\' viewBox=\\'0 0 24 24\\' fill=\\'none\\' stroke=\\'currentColor\\' stroke-width=\\'2\\' stroke-linecap=\\'round\\' stroke-linejoin=\\'round\\'><polyline points=\\'6 9 12 15 18 9\\'></polyline></svg>') no-repeat right 4px center; padding-right: 24px;">
-                <option value="" disabled \${!formData.ageGroup ? 'selected' : ''}>선택해주세요</option>
-                <option value="10대" \${formData.ageGroup === '10대' ? 'selected' : ''}>10대</option>
-                <option value="20대" \${formData.ageGroup === '20대' ? 'selected' : ''}>20대</option>
-                <option value="30대" \${formData.ageGroup === '30대' ? 'selected' : ''}>30대</option>
-                <option value="40대" \${formData.ageGroup === '40대' ? 'selected' : ''}>40대</option>
-                <option value="50대" \${formData.ageGroup === '50대' ? 'selected' : ''}>50대</option>
-                <option value="60대 이상" \${formData.ageGroup === '60대 이상' ? 'selected' : ''}>60대 이상</option>
+                <option value="" disabled ${!formData.ageGroup ? 'selected' : ''}>선택해주세요</option>
+                <option value="10대" ${formData.ageGroup === '10대' ? 'selected' : ''}>10대</option>
+                <option value="20대" ${formData.ageGroup === '20대' ? 'selected' : ''}>20대</option>
+                <option value="30대" ${formData.ageGroup === '30대' ? 'selected' : ''}>30대</option>
+                <option value="40대" ${formData.ageGroup === '40대' ? 'selected' : ''}>40대</option>
+                <option value="50대" ${formData.ageGroup === '50대' ? 'selected' : ''}>50대</option>
+                <option value="60대 이상" ${formData.ageGroup === '60대 이상' ? 'selected' : ''}>60대 이상</option>
               </select>
             </div>
             <div style="flex:1;">
               <label class="cf-label">성별</label>
               <div class="cf-flex-gap-4">
-                <label class="cf-radio-btn \${formData.gender === '남성' ? 'active' : ''}" style="padding: 8px 0;">
-                  <input type="radio" class="cf-hidden" name="gender" value="남성" \${formData.gender === '남성' ? 'checked' : ''} onchange="updateData('gender', '남성')">남성
+                <label class="cf-radio-btn ${formData.gender === '남성' ? 'active' : ''}" style="padding: 8px 0;">
+                  <input type="radio" class="cf-hidden" name="gender" value="남성" ${formData.gender === '남성' ? 'checked' : ''} onchange="updateData('gender', '남성')">남성
                 </label>
-                <label class="cf-radio-btn \${formData.gender === '여성' ? 'active' : ''}" style="padding: 8px 0;">
-                  <input type="radio" class="cf-hidden" name="gender" value="여성" \${formData.gender === '여성' ? 'checked' : ''} onchange="updateData('gender', '여성')">여성
+                <label class="cf-radio-btn ${formData.gender === '여성' ? 'active' : ''}" style="padding: 8px 0;">
+                  <input type="radio" class="cf-hidden" name="gender" value="여성" ${formData.gender === '여성' ? 'checked' : ''} onchange="updateData('gender', '여성')">여성
                 </label>
               </div>
             </div>
           </div>
           <div>
             <label class="cf-label">연락처</label>
-            <input type="tel" class="cf-input" placeholder="010-0000-0000" value="\${formData.phone}" onchange="updateData('phone', this.value)">
+            <input type="tel" class="cf-input" placeholder="010-0000-0000" value="${formData.phone}" onchange="updateData('phone', this.value)">
           </div>
           <div class="cf-pt-4 cf-space-y-2">
             <label class="cf-checkbox-label">
-              <input type="checkbox" \${formData.privacyConsent ? 'checked' : ''} onchange="updateData('privacyConsent', this.checked)">
+              <input type="checkbox" ${formData.privacyConsent ? 'checked' : ''} onchange="updateData('privacyConsent', this.checked)">
               <span>[필수] 개인정보 수집 및 이용 동의</span>
             </label>
             <label class="cf-checkbox-label">
-              <input type="checkbox" \${formData.marketingConsent ? 'checked' : ''} onchange="updateData('marketingConsent', this.checked)">
+              <input type="checkbox" ${formData.marketingConsent ? 'checked' : ''} onchange="updateData('marketingConsent', this.checked)">
               <span>[선택] 더웰샘 VIP 초청 이벤트 및 소식지 수신 동의</span>
             </label>
             <label class="cf-checkbox-label">
-              <input type="checkbox" \${formData.thirdPartyConsent ? 'checked' : ''} onchange="updateData('thirdPartyConsent', this.checked)">
+              <input type="checkbox" ${formData.thirdPartyConsent ? 'checked' : ''} onchange="updateData('thirdPartyConsent', this.checked)">
               <span>[선택] 양·한방 협진 및 정밀 상담을 위한 제3자 정보 제공 동의</span>
             </label>
           </div>
@@ -303,15 +303,15 @@ function renderStep() {
       { id: 'KBEAUTY', text: 'K-Beauty 프리미엄 상담', desc: '피부미용, 윤곽, 다이어트 등 프라이빗 뷰티 밸런스' }
     ];
     let btns = opts.map(o => `
-      <div onclick="updateData('mainCategory', '\${o.id}'); setTimeout(handleNext, 300);" class="cf-option-card \${formData.mainCategory === o.id ? 'active' : ''}">
-        <div style="font-weight: 500; font-size: 1.1rem; margin-bottom: 4px; color: \${formData.mainCategory === o.id ? '#D4AF37' : '#111'}">\${o.text}</div>
-        <div style="font-size: 0.85rem; color: #666;">\${o.desc}</div>
+      <div onclick="updateData('mainCategory', '${o.id}'); setTimeout(handleNext, 300);" class="cf-option-card ${formData.mainCategory === o.id ? 'active' : ''}">
+        <div style="font-weight: 500; font-size: 1.1rem; margin-bottom: 4px; color: ${formData.mainCategory === o.id ? '#D4AF37' : '#111'}">${o.text}</div>
+        <div style="font-size: 0.85rem; color: #666;">${o.desc}</div>
       </div>
     `).join('');
     contentHtml = `
       <div class="cf-space-y-8">
         <h2 class="cf-title">어떤 방향의<br/><span class="cf-highlight">프리미엄 케어 상담</span>을 원하시나요?</h2>
-        <div class="cf-space-y-4">\${btns}</div>
+        <div class="cf-space-y-4">${btns}</div>
       </div>
     `;
   } else if (step === 3) {
@@ -333,12 +333,12 @@ function renderStep() {
       ];
     }
     let btns = opts.map(o => `
-      <button onclick="updateData('subCategory', '\${o.id}'); setTimeout(handleNext, 300);" class="cf-option-btn \${formData.subCategory === o.id ? 'active' : ''}">\${o.text}</button>
+      <button onclick="updateData('subCategory', '${o.id}'); setTimeout(handleNext, 300);" class="cf-option-btn ${formData.subCategory === o.id ? 'active' : ''}">${o.text}</button>
     `).join('');
     contentHtml = `
       <div class="cf-space-y-8">
         <h2 class="cf-title">오늘 집중적으로<br/><span class="cf-highlight">체크받고 싶은 분야</span>를 선택해 주세요.</h2>
-        <div class="cf-space-y-3">\${btns}</div>
+        <div class="cf-space-y-3">${btns}</div>
       </div>
     `;
   } else if (step >= 4 && step <= 7) {
@@ -354,42 +354,42 @@ function renderStep() {
     
     const introHtml = (step === 4) ? `
       <div style="background: rgba(212, 175, 55, 0.05); border-left: 3px solid #D4AF37; padding: 16px; margin-bottom: 32px;">
-        <span style="font-family: 'Cinzel', serif; color: #D4AF37; font-size: 0.8rem; display: block; margin-bottom: 4px;">\${subData.title}</span>
-        <p style="font-size: 0.9rem; color: #444; line-height: 1.5; margin: 0;">\${subData.desc}</p>
+        <span style="font-family: 'Cinzel', serif; color: #D4AF37; font-size: 0.8rem; display: block; margin-bottom: 4px;">${subData.title}</span>
+        <p style="font-size: 0.9rem; color: #444; line-height: 1.5; margin: 0;">${subData.desc}</p>
       </div>
     ` : '';
 
     if (qData.type === 'textarea') {
       contentHtml = `
         <div class="cf-space-y-8">
-          \${introHtml}
-          <h2 class="cf-title" style="font-size: 1.25rem;">\${qData.title}</h2>
+          ${introHtml}
+          <h2 class="cf-title" style="font-size: 1.25rem;">${qData.title}</h2>
           <div class="cf-space-y-4">
-            <textarea class="cf-textarea" onchange="updateData('\${qKey}', this.value, true)" placeholder="여기에 자유롭게 작성해 주세요.">\${formData.subAnswers[qKey]}</textarea>
-            <button onclick="handleNext()" class="cf-btn-primary" \${!formData.subAnswers[qKey] ? 'disabled' : ''}>다음</button>
+            <textarea class="cf-textarea" onchange="updateData('${qKey}', this.value, true)" placeholder="여기에 자유롭게 작성해 주세요.">${formData.subAnswers[qKey]}</textarea>
+            <button onclick="handleNext()" class="cf-btn-primary" ${!formData.subAnswers[qKey] ? 'disabled' : ''}>다음</button>
           </div>
         </div>
       `;
     } else {
       let btns = qData.options.map(o => `
-        <button onclick="updateData('\${qKey}', '\${o}', true); setTimeout(handleNext, 300);" class="cf-option-btn \${formData.subAnswers[qKey] === o ? 'active' : ''}" style="text-align: left;">\${o}</button>
+        <button onclick="updateData('${qKey}', '${o}', true); setTimeout(handleNext, 300);" class="cf-option-btn ${formData.subAnswers[qKey] === o ? 'active' : ''}" style="text-align: left;">${o}</button>
       `).join('');
       
       const isCustomVal = formData.subAnswers[qKey] && !qData.options.includes(formData.subAnswers[qKey]);
       const customHtml = qData.custom ? `
         <div class="cf-flex-gap-2 mt-2">
-          <input type="text" placeholder="기타 (직접 입력)" value="\${isCustomVal ? formData.subAnswers[qKey] : ''}" onchange="updateData('\${qKey}', this.value, true)" class="cf-input-flex">
-          <button onclick="handleNext()" class="cf-btn-dark-small" \${!formData.subAnswers[qKey] ? 'disabled' : ''}>다음</button>
+          <input type="text" placeholder="기타 (직접 입력)" value="${isCustomVal ? formData.subAnswers[qKey] : ''}" onchange="updateData('${qKey}', this.value, true)" class="cf-input-flex">
+          <button onclick="handleNext()" class="cf-btn-dark-small" ${!formData.subAnswers[qKey] ? 'disabled' : ''}>다음</button>
         </div>
       ` : '';
 
       contentHtml = `
         <div class="cf-space-y-8">
-          \${introHtml}
-          <h2 class="cf-title" style="font-size: 1.25rem; line-height: 1.5;">\${qData.title}</h2>
+          ${introHtml}
+          <h2 class="cf-title" style="font-size: 1.25rem; line-height: 1.5;">${qData.title}</h2>
           <div class="cf-space-y-3">
-            \${btns}
-            \${customHtml}
+            ${btns}
+            ${customHtml}
           </div>
         </div>
       `;
@@ -397,17 +397,17 @@ function renderStep() {
   } else if (step === 8) {
     const opts = ['없음', '고혈압·당뇨약', '아스피린·항응고제'];
     let btns = opts.map(o => `
-      <button onclick="updateData('medication', '\${o}', false, true); setTimeout(handleNext, 300);" class="cf-option-btn \${formData.commonAnswers.medication === o ? 'active' : ''}">\${o}</button>
+      <button onclick="updateData('medication', '${o}', false, true); setTimeout(handleNext, 300);" class="cf-option-btn ${formData.commonAnswers.medication === o ? 'active' : ''}">${o}</button>
     `).join('');
     const isCustom = formData.commonAnswers.medication && !opts.includes(formData.commonAnswers.medication);
     contentHtml = `
       <div class="cf-space-y-8">
         <h2 class="cf-title" style="font-size: 1.25rem;">현재 정기적으로 복용 중인 약물이 있으신가요?</h2>
         <div class="cf-space-y-3">
-          \${btns}
+          ${btns}
           <div class="cf-flex-gap-2 mt-2">
-            <input type="text" placeholder="기타 (직접 입력)" value="\${isCustom ? formData.commonAnswers.medication : ''}" onchange="updateData('medication', this.value, false, true)" class="cf-input-flex">
-            <button onclick="handleNext()" class="cf-btn-dark-small" \${!formData.commonAnswers.medication ? 'disabled' : ''}>다음</button>
+            <input type="text" placeholder="기타 (직접 입력)" value="${isCustom ? formData.commonAnswers.medication : ''}" onchange="updateData('medication', this.value, false, true)" class="cf-input-flex">
+            <button onclick="handleNext()" class="cf-btn-dark-small" ${!formData.commonAnswers.medication ? 'disabled' : ''}>다음</button>
           </div>
         </div>
       </div>
@@ -417,12 +417,12 @@ function renderStep() {
       <div class="cf-space-y-8">
         <h2 class="cf-title" style="font-size: 1.25rem; line-height: 1.5;">최근 5년 이내에 진단받으신 주요 질환(암, 자가면역질환 등)이 있으신가요?</h2>
         <div class="cf-space-y-3">
-          <button onclick="updateData('disease', '없음', false, true); setTimeout(handleNext, 300);" class="cf-option-btn \${formData.commonAnswers.disease === '없음' ? 'active' : ''}">없음</button>
+          <button onclick="updateData('disease', '없음', false, true); setTimeout(handleNext, 300);" class="cf-option-btn ${formData.commonAnswers.disease === '없음' ? 'active' : ''}">없음</button>
           <div class="cf-col-gap-3 pt-2">
             <label class="cf-label-small">있으시다면 질환명을 입력해 주세요.</label>
             <div class="cf-flex-gap-2">
-              <input type="text" placeholder="예: 류마티스 관절염" value="\${formData.commonAnswers.disease !== '없음' ? formData.commonAnswers.disease : ''}" onchange="updateData('disease', this.value, false, true)" class="cf-input-flex">
-              <button onclick="handleNext()" class="cf-btn-dark-small" \${!formData.commonAnswers.disease ? 'disabled' : ''}>다음</button>
+              <input type="text" placeholder="예: 류마티스 관절염" value="${formData.commonAnswers.disease !== '없음' ? formData.commonAnswers.disease : ''}" onchange="updateData('disease', this.value, false, true)" class="cf-input-flex">
+              <button onclick="handleNext()" class="cf-btn-dark-small" ${!formData.commonAnswers.disease ? 'disabled' : ''}>다음</button>
             </div>
           </div>
         </div>
@@ -431,23 +431,23 @@ function renderStep() {
   } else if (step === 10) {
     const opts = ['6시간 미만 · 숙면 못함', '6~7시간 · 보통', '8시간 이상 · 숙면'];
     let btns = opts.map(o => `
-      <button onclick="updateData('sleep', '\${o}', false, true); setTimeout(handleNext, 300);" class="cf-option-btn \${formData.commonAnswers.sleep === o ? 'active' : ''}">\${o}</button>
+      <button onclick="updateData('sleep', '${o}', false, true); setTimeout(handleNext, 300);" class="cf-option-btn ${formData.commonAnswers.sleep === o ? 'active' : ''}">${o}</button>
     `).join('');
     contentHtml = `
       <div class="cf-space-y-8">
         <h2 class="cf-title" style="font-size: 1.25rem;">평소 하루 평균 수면 시간과 수면의 질은 어떠신가요?</h2>
-        <div class="cf-space-y-3">\${btns}</div>
+        <div class="cf-space-y-3">${btns}</div>
       </div>
     `;
   } else if (step === 11) {
     const opts = ['비음주 · 비흡연', '음주만 가끔', '흡연 중', '둘 다 해당'];
     let btns = opts.map(o => `
-      <button onclick="updateData('lifestyle', '\${o}', false, true); setTimeout(handleQ11Next, 300);" class="cf-option-btn \${formData.commonAnswers.lifestyle === o ? 'active' : ''}">\${o}</button>
+      <button onclick="updateData('lifestyle', '${o}', false, true); setTimeout(handleQ11Next, 300);" class="cf-option-btn ${formData.commonAnswers.lifestyle === o ? 'active' : ''}">${o}</button>
     `).join('');
     contentHtml = `
       <div class="cf-space-y-8">
         <h2 class="cf-title" style="font-size: 1.25rem;">일주일 기준 음주 빈도와 흡연 여부를 체크해 주세요.</h2>
-        <div class="cf-space-y-3">\${btns}</div>
+        <div class="cf-space-y-3">${btns}</div>
       </div>
     `;
   } else if (step === 12) {
@@ -470,14 +470,14 @@ function renderStep() {
           <div class="cf-space-y-6">
             <div>
               <label class="cf-label-bold">희망 대면 상담 일정</label>
-              <input type="datetime-local" value="\${formData.q11Date}" onchange="updateData('q11Date', this.value)" class="cf-input-full">
+              <input type="datetime-local" value="${formData.q11Date}" onchange="updateData('q11Date', this.value)" class="cf-input-full">
             </div>
             <div>
               <label class="cf-label-bold">의료진에게 미리 전달하실 특이사항 (선택)</label>
-              <textarea class="cf-textarea-small" onchange="updateData('q12Memo', this.value)" placeholder="이전에 받으신 시술이나 특별히 피하고 싶으신 치료법이 있다면 적어주세요.">\${formData.q12Memo}</textarea>
+              <textarea class="cf-textarea-small" onchange="updateData('q12Memo', this.value)" placeholder="이전에 받으신 시술이나 특별히 피하고 싶으신 치료법이 있다면 적어주세요.">${formData.q12Memo}</textarea>
             </div>
-            <button onclick="submitFinal()" class="cf-btn-primary-gold" \${isSubmitting ? 'disabled' : ''}>
-              \${isSubmitting ? '<div class="cf-spinner-small"></div>' : '프라이빗 상담 예약 접수하기'}
+            <button onclick="submitFinal()" class="cf-btn-primary-gold" ${isSubmitting ? 'disabled' : ''}>
+              ${isSubmitting ? '<div class="cf-spinner-small"></div>' : '프라이빗 상담 예약 접수하기'}
             </button>
           </div>
         </div>
@@ -492,7 +492,7 @@ function renderStep() {
       <div class="cf-footer">
         <div class="cf-footer-inner">
           <button onclick="handlePrev()" class="cf-prev-btn">이전으로</button>
-          <span class="cf-step-count">\${step} / 11</span>
+          <span class="cf-step-count">${step} / 11</span>
           <div style="width:60px;"></div>
         </div>
       </div>
@@ -506,14 +506,14 @@ function renderStep() {
         <button onclick="closeModal()" class="cf-close-btn">&times;</button>
       </div>
       <div class="cf-progress-bg">
-        <div class="cf-progress-bar" style="width: \${progressPercent}%"></div>
+        <div class="cf-progress-bar" style="width: ${progressPercent}%"></div>
       </div>
     </div>
     <div class="cf-content-area cf-animate-up" id="cf-content">
       <div class="cf-w-full">
-        \${contentHtml}
+        ${contentHtml}
       </div>
     </div>
-    \${footerHtml}
+    ${footerHtml}
   `;
 }
