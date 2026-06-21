@@ -768,6 +768,9 @@ body {
 }
 
 @media (max-width: 768px) {
+  .sanctuary-text-wrap {
+    padding: 0 24px;
+  }
   .sanctuary-title {
     font-size: 32px;
   }
