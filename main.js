@@ -389,6 +389,12 @@ function initDetailPages() {
                 </ul>
               </div>
             </div>
+
+            <div class="detail-cta-box" style="margin-top: 64px; text-align: center; padding-bottom: 32px;">
+              <button class="btn btn-luxury-white detail-consultation-btn">
+                상담 신청하기 <span class="arrow">→</span>
+              </button>
+            </div>
           </div>
         `;
       } else {
@@ -436,6 +442,12 @@ function initDetailPages() {
                 </ul>
               </div>
             </div>
+
+            <div class="detail-cta-box" style="margin-top: 48px;">
+              <button class="btn btn-luxury-white detail-consultation-btn">
+                상담 신청하기 <span class="arrow">→</span>
+              </button>
+            </div>
           </div>
 
           <div class="detail-visual-side">
@@ -444,6 +456,17 @@ function initDetailPages() {
             </div>
           </div>
         `;
+      }
+
+      // Add event listener to the dynamically created consultation button
+      const detailCtaBtn = dynamicContent.querySelector('.detail-consultation-btn');
+      if (detailCtaBtn) {
+        detailCtaBtn.addEventListener('click', () => {
+          closeOverlay();
+          if (typeof window.openModal === 'function') {
+            window.openModal();
+          }
+        });
       }
 
       // Show Overlay
