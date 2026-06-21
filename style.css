@@ -2513,3 +2513,13 @@ footer {
   .doctor-name { font-size: 1.5rem; }
   .doctor-role { font-size: 0.95rem; }
 }
+
+/* Fix for pages where the first section is not a full-height hero */
+main > section:first-of-type:not(#hero) {
+  padding-top: 160px; /* offset for fixed header */
+}
+@media (max-width: 768px) {
+  main > section:first-of-type:not(#hero) {
+    padding-top: 120px;
+  }
+}
