@@ -1475,3 +1475,33 @@ footer {
     border-top: 1px solid rgba(255, 255, 255, 0.05);
   }
 }
+
+/* --- NEW: Scroll Mode overrides for Landing Page style --- */
+.detail-layout.scroll-mode {
+  display: block;
+  overflow-y: auto;
+  padding-bottom: 80px;
+}
+.detail-layout.scroll-mode .detail-scroll-inner {
+  padding: 60px 40px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.detail-hero-img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+  margin: 30px 0;
+  object-fit: cover;
+}
+.detail-section-img {
+  width: 100%;
+  border-radius: 8px;
+  margin-top: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+@media (max-width: 768px) {
+  .detail-layout.scroll-mode .detail-scroll-inner {
+    padding: 60px 20px;
+  }
+}
