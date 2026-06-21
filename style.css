@@ -2125,11 +2125,13 @@ footer {
   height: 100%;
 }
 .doctor-image-wrapper {
-  width: 100%;
+  width: 50%;
+  margin: 30px auto 0;
   aspect-ratio: 1 / 1;
   overflow: hidden;
   background: #f4f4f4;
-  border-bottom: 1px solid rgba(212, 175, 55, 0.15);
+  border-radius: 50%; /* 원형으로 변경하여 더 전문적이고 부드러운 느낌 제공 */
+  border: 1px solid rgba(212, 175, 55, 0.2);
 }
 .doctor-image {
   width: 100%;
