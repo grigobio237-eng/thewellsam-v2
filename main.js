@@ -272,46 +272,29 @@ const cardDetailsData = [
     ]
   },
   {
-    tag: 'SYSTEMIC REVITALIZATION',
-    title: '신체 에너지 리마스터링',
-    subtitle: 'Immunity & Vitality',
-    concept: '단순한 피로 회복을 넘어, 신체 전반의 생체 나이를 낮추는 전신 케어 메커니즘을 설명합니다.',
+    tag: 'IMMUNITY & VITALITY',
+    title: '면역력 강화 및 만성피로 회복',
+    subtitle: 'Systemic Revitalization',
+    concept: '아무리 쉬어도 풀리지 않는 무거운 몸, 수액이나 영양제로는 닿을 수 없는 피로의 근본 원인을 해결합니다. 체내에 주입된 줄기세포가 전신을 순환하며 노화되고 손상된 장기 세포를 깨우고, 무너진 신체 방어벽을 견고하게 재건하여 당신의 일상에 가볍고 맑은 활력을 되찾아 드립니다.',
+    conceptImage: '/detail3-concept.webp',
     mechanisms: [
       {
-        title: '미세 혈관 신생 (Angiogenesis)',
-        desc: '줄기세포는 혈관 내피 성장인자(VEGF)를 분비하여 막히거나 노화된 미세 혈관망을 새로 구축합니다. 이를 통해 뇌와 전신 장기에 산소와 영양분이 폭발적으로 공급됩니다.'
+        title: '전신 산소망 복구 (미세 혈관 신생)',
+        desc: '줄기세포는 몸속 구석구석 혈액이 통하지 않는 막히고 좁아진 미세 혈관들을 새로 뚫고 연결합니다. 뇌와 척수, 전신 장기에 맑은 산소와 영양분이 폭발적으로 공급되면서 머리가 맑아지고 묵은 피로가 씻겨 내려갑니다.',
+        image: '/detail3-mechanism1.webp'
       },
       {
-        title: '면역 조절 (Immunomodulation)',
-        desc: '과각성된 자가면역 반응은 가라앉히고, 저하된 방어력(NK세포 및 T세포 기능)은 끌어올려 신체의 면역 밸런스를 완벽한 상태로 재조정합니다. 활성산소(스트레스 물질)를 효과적으로 제거하여 세포 산화를 방지합니다.'
+        title: '무너진 방어 체계의 정상화',
+        desc: '스트레스와 노화로 밸런스가 깨진 면역 세포들을 찾아내어 최적의 상태로 조율합니다. 외부 바이러스에 대한 강력한 방어막을 형성할 뿐만 아니라, 잦은 잔병치레와 자가면역 질환의 고통으로부터 내 몸을 든든하게 지켜냅니다.',
+        image: '/detail3-mechanism2.webp'
       }
     ],
     effects: [
-      '만성 피로 증후군 개선 및 뇌 브레인 포그(Brain Fog) 해소',
-      '수술 및 중증 질환 후 전신 컨디션의 급진적 회복'
-    ],
-    visualSvg: `
-      <svg class="visual-svg" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M 40 200 L 220 200" stroke="rgba(255,255,255,0.06)" stroke-width="4" stroke-linecap="round"/>
-        
-        <path d="M 100 200 C 110 170, 130 150, 160 140" stroke="var(--color-gold)" stroke-width="1.2" stroke-linecap="round" fill="none" class="vessel-path"/>
-        <path d="M 140 140 C 150 120, 180 110, 200 110" stroke="var(--color-gold)" stroke-width="1" stroke-linecap="round" fill="none" class="vessel-path" style="animation-delay: 1.8s;"/>
-        
-        <path d="M 170 200 C 180 230, 200 250, 220 260" stroke="var(--color-gold)" stroke-width="1.2" stroke-linecap="round" fill="none" class="vessel-path" style="animation-delay: 0.8s;"/>
-        <path d="M 200 250 C 210 270, 230 280, 260 285" stroke="var(--color-gold)" stroke-width="1" stroke-linecap="round" fill="none" class="vessel-path" style="animation-delay: 2.6s;"/>
-        
-        <g transform="translate(290, 180)" class="nk-cell">
-          <circle cx="0" cy="0" r="22" fill="rgba(100, 180, 240, 0.05)" stroke="rgba(100, 180, 240, 0.3)" stroke-width="1" stroke-dasharray="4 2"/>
-          <polygon points="0,-15 4,-4 15,-4 6,2 9,13 0,6 -9,13 -6,2 -15,-4 -4,-4" fill="rgba(100, 180, 240, 0.12)" stroke="rgba(100, 180, 240, 0.7)" stroke-width="1.2" class="glowing-node-blue"/>
-          <circle cx="0" cy="0" r="3" fill="rgba(100, 180, 240, 0.95)"/>
-        </g>
-        
-        <circle cx="160" cy="140" r="2.5" fill="var(--color-gold)" class="vitality-bubble" style="--bx: -20px; animation-delay: 0.5s;"/>
-        <circle cx="200" cy="110" r="2" fill="var(--color-gold)" class="vitality-bubble" style="--bx: 30px; animation-delay: 2.3s;"/>
-        <circle cx="220" cy="260" r="3" fill="var(--color-gold)" class="vitality-bubble" style="--bx: -35px; animation-delay: 1.3s;"/>
-        <circle cx="260" cy="285" r="2.5" fill="var(--color-gold)" class="vitality-bubble" style="--bx: 10px; animation-delay: 3.2s;"/>
-      </svg>
-    `
+      '수면이나 휴식으로도 해결되지 않던 극심한 만성피로 증후군 개선',
+      '면역력 저하로 인한 잦은 감기, 대상포진 등 감염성 질환 예방',
+      '전반적인 신체 에너지 레벨 상승 및 뇌 안개(Brain Fog) 현상 완화',
+      '질병이나 수술 후 급격히 떨어진 기력의 빠른 정상화'
+    ]
   },
   {
     tag: 'PREMIUM SKIN BEAUTY',
