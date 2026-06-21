@@ -163,6 +163,113 @@ const cardDetailsData = [
   }
 ];
 
+const kbeautyDetailsData = [
+  {
+    tag: 'SKIN AESTHETICS',
+    title: '피부미용',
+    subtitle: 'Premium Skin Care',
+    concept: '피부 탄력, 피부 톤, 광채, 주름 관리 등 보이지 않는 피부 균형을 맞춰 화사하고 생기 있는 본연의 아름다움을 찾아드립니다. 겉면의 피부결 개선뿐만 아니라 근본적인 밸런스를 바로잡아 건강한 윤기를 되찾습니다.',
+    conceptImage: '/kbeauty_skin.webp',
+    checklist: ['피부 탄력 저하 정도', '주름 및 피부 톤 변화', '최근 피부과 시술 이력', '사용 중인 화장품 및 트러블 여부', '가장 기대하는 개선 효과'],
+    mechanisms: [
+      {
+        title: '맞춤형 피부 장벽 재건',
+        desc: '건조하고 예민해진 피부 장벽을 튼튼하게 복구시켜 외부 자극으로부터 피부를 보호하고, 수분을 꽉 잡아주는 힘을 길러줍니다.',
+        image: '/detail4-mechanism1.webp'
+      },
+      {
+        title: '맑고 투명한 피부결 디자인',
+        desc: '기미, 잡티 등 색소 침착을 완화하고 피부 속부터 우러나오는 자연스러운 광채와 맑은 피부 톤을 연출합니다.',
+        image: '/detail4-mechanism2.webp'
+      }
+    ],
+    effects: [
+      '피부 속부터 차오르는 맑고 투명한 광채',
+      '탄력 있고 매끄러운 피부결 회복',
+      '피부 장벽 강화를 통한 건강한 피부 유지',
+      '주름 및 잔주름의 자연스러운 완화'
+    ]
+  },
+  {
+    tag: 'FACIAL SYMMETRY',
+    title: '안면비대칭·안면마비',
+    subtitle: 'Balance & Alignment',
+    concept: '얼굴 균형, 턱선과 목선 정렬, 마비 후 회복 등 섬세한 안면 근육의 밸런스를 바로잡아 편안하고 자연스러운 미소를 복원합니다. 틀어진 근육과 골격의 조화를 되찾아줍니다.',
+    conceptImage: '/kbeauty_symmetry.webp',
+    checklist: ['얼굴 양측의 불균형 정도', '턱관절 소리 및 통증 여부', '목과 어깨의 뭉침 상태', '과거 교정 치료 이력', '원하는 얼굴 라인의 변화'],
+    mechanisms: [
+      {
+        title: '섬세한 근육 및 근막 이완',
+        desc: '긴장하고 뭉친 안면 및 목 주변의 근막을 부드럽게 이완시켜, 비대칭의 원인이 되는 근육 불균형을 해소합니다.',
+        image: '/detail2-mechanism1.webp'
+      },
+      {
+        title: '자연스러운 라인 정렬',
+        desc: '인위적인 시술 없이 근육의 본래 위치와 움직임을 되찾아, 가장 자연스럽고 편안한 인상과 V라인을 완성합니다.',
+        image: '/detail2-mechanism2.webp'
+      }
+    ],
+    effects: [
+      '좌우 대칭이 맞는 조화로운 얼굴 라인',
+      '자연스럽고 편안한 표정과 미소 회복',
+      '턱선 및 목선의 아름다운 실루엣 완성',
+      '안면 마비 후유증의 효과적인 개선'
+    ]
+  },
+  {
+    tag: 'POST-SURGERY CARE',
+    title: '성형수술 후 프로그램',
+    subtitle: 'Fast Recovery',
+    concept: '수술 후 붓기, 멍, 회복 관리를 통해 신속한 일상 복귀를 돕고 수술 본연의 아름다운 라인이 부작용 없이 완성되도록 정교하게 지원합니다.',
+    conceptImage: '/kbeauty_recovery.webp',
+    checklist: ['최근 수술 종류 및 부위', '수술 후 경과 시간', '현재 가장 불편한 증상(붓기, 멍, 통증)', '복용 중인 약물 여부', '일상 복귀 희망 일정'],
+    mechanisms: [
+      {
+        title: '급성 붓기 및 멍 집중 배출',
+        desc: '정체된 림프 순환을 촉진하여 수술 부위의 붓기와 어혈(멍)을 빠르고 안전하게 배출시킵니다.',
+        image: '/detail3-mechanism1.webp'
+      },
+      {
+        title: '조직 유착 방지 및 라인 고정',
+        desc: '수술 부위가 단단하게 뭉치거나 유착되는 것을 방지하고, 수술 본연의 매끄럽고 아름다운 라인이 자리 잡도록 돕습니다.',
+        image: '/detail3-mechanism2.webp'
+      }
+    ],
+    effects: [
+      '수술 후 붓기 및 멍의 빠른 감소',
+      '수술 부위의 조직 안정화 및 유착 방지',
+      '통증 완화 및 빠르고 편안한 일상 복귀',
+      '수술 만족도를 극대화하는 자연스러운 라인 완성'
+    ]
+  },
+  {
+    tag: 'PREMIUM DIET',
+    title: '다이어트',
+    subtitle: 'Body Silhouette',
+    concept: '체형 변화, 붓기, 대사 관리 등 신체 리듬을 깨워 품격 있는 바디 실루엣과 건강한 활력을 디자인합니다. 단순한 체중 감량이 아닌 건강한 대사 사이클을 되찾습니다.',
+    conceptImage: '/kbeauty_diet.webp',
+    checklist: ['체중 감량 목표', '평소 식습관 및 수면 패턴', '만성적인 붓기 또는 소화 불량 여부', '과거 다이어트 경험 및 요요 여부', '집중적으로 개선하고 싶은 신체 부위'],
+    mechanisms: [
+      {
+        title: '신진대사 사이클 리셋',
+        desc: '저하된 기초 대사량을 끌어올리고 체내 노폐물 배출을 촉진하여, 살이 쉽게 찌지 않는 건강한 체질로 개선합니다.',
+        image: '/detail1-mechanism2.webp'
+      },
+      {
+        title: '국소 부위 라인 집중 관리',
+        desc: '잘 빠지지 않는 군살과 부종을 집중적으로 관리하여, 탄력 잃은 바디 라인을 매끄럽고 균형 있게 잡아줍니다.',
+        image: '/detail1-mechanism1.webp'
+      }
+    ],
+    effects: [
+      '건강하고 무리 없는 자연스러운 체중 감량',
+      '부종 감소 및 매끄러운 바디 실루엣 완성',
+      '기초 대사량 증가로 인한 활력 넘치는 일상',
+      '요요 현상을 최소화하는 체질 개선 효과'
+    ]
+  }
+];
+
 function initDetailPages() {
   const overlay = document.getElementById('detail-overlay');
   if (!overlay) return;
@@ -177,9 +284,15 @@ function initDetailPages() {
   cards.forEach(card => {
     card.addEventListener('click', () => {
       const index = parseInt(card.getAttribute('data-card-index'), 10);
-      if (isNaN(index) || !cardDetailsData[index]) return;
+      if (isNaN(index)) return;
 
-      const data = cardDetailsData[index];
+      let data;
+      if (index < 4) {
+        data = cardDetailsData[index];
+      } else {
+        data = kbeautyDetailsData[index - 4];
+      }
+      if (!data) return;
 
       // Check if it's the new landing page format (has conceptImage)
       if (data.conceptImage) {
@@ -359,11 +472,13 @@ window.openConsultationForm = function(indexStr) {
     document.body.style.overflow = '';
   }
 
-  const cats = ['STEM_1', 'STEM_2', 'STEM_3', 'STEM_4'];
-  const subCat = cats[parseInt(indexStr)] || 'STEM_1';
+  const idx = parseInt(indexStr, 10);
+  const isKBeauty = idx >= 4;
+  const cats = ['STEM_1', 'STEM_2', 'STEM_3', 'STEM_4', 'KB_1', 'KB_2', 'KB_3', 'KB_4'];
+  const subCat = cats[idx] || 'STEM_1';
 
   if (typeof formData !== 'undefined') {
-    formData.mainCategory = 'STEM';
+    formData.mainCategory = isKBeauty ? 'KBEAUTY' : 'STEM';
     formData.subCategory = subCat;
   }
 

@@ -2037,3 +2037,52 @@ footer {
     padding: 14px 20px;
   }
 }
+
+/* Header Navigation Menu */
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+.nav-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 30px;
+}
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.05rem;
+  font-weight: 400;
+  opacity: 0.7;
+  transition: all 0.3s ease;
+}
+.nav-link:hover, .nav-link.active {
+  opacity: 1;
+  color: var(--color-gold);
+}
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* K-Beauty Section Styles */
+.kbeauty-bg { background-color: #FAFAFA; color: #1a1a1a; }
+.kbeauty-bg .header-subtitle { color: var(--color-gold); }
+.kbeauty-bg .header-title { color: #1a1a1a; }
+.kbeauty-bg .essence-card { background: #fff; border: 1px solid rgba(0,0,0,0.05); box-shadow: 0 10px 30px rgba(0,0,0,0.03); }
+.kbeauty-bg .card-title { color: #1a1a1a; }
+.kbeauty-bg .card-subtitle { color: #888; }
+.kbeauty-bg .card-desc { color: #555; }
+.kbeauty-bg .card-num { color: rgba(0,0,0,0.1); }
+
+.kbeauty-disclaimer { max-width: 800px; margin: 4rem auto 0; padding: 2.5rem; background: #fff; border: 1px solid rgba(212, 175, 55, 0.2); border-radius: 8px; text-align: center; box-shadow: 0 10px 30px rgba(0,0,0,0.02); }
+.disclaimer-header { display: flex; align-items: center; justify-content: center; gap: 15px; margin-bottom: 2rem; }
+.disclaimer-header h3 { font-size: 1.3rem; color: #1a1a1a; margin: 0; }
+.line-left, .line-right { height: 1px; background: rgba(212, 175, 55, 0.4); flex: 1; max-width: 60px; }
+.disclaimer-list { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 1rem; align-items: flex-start; text-align: left; max-width: 400px; margin: 0 auto; }
+.disclaimer-list li { font-size: 1.05rem; color: #444; display: flex; align-items: center; gap: 10px; }
+.d-icon { font-size: 1.2rem; }
+
