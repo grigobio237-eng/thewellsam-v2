@@ -516,6 +516,192 @@ body {
   line-height: 1.6;
   margin: 0;
 }
+/* 1.5 Why The Wellsam */
+.why-wellsam-bg {
+  background-color: var(--color-bg-light); /* beige tone */
+  color: var(--color-text-dark);
+  position: relative;
+  border-top: 1px solid rgba(0,0,0,0.05);
+}
+
+.why-header {
+  margin-bottom: 60px;
+}
+
+.logo-mark {
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+
+.why-subtitle {
+  font-size: 14px;
+  letter-spacing: 0.1em;
+  color: var(--color-text-muted-dark);
+  margin-bottom: 20px;
+}
+
+.why-title {
+  font-size: 42px;
+  margin-bottom: 30px;
+}
+
+.why-desc {
+  font-size: 16px;
+  line-height: 1.8;
+  color: var(--color-text-muted-dark);
+}
+
+.why-subheading {
+  font-size: 24px;
+  color: var(--color-text-dark);
+  margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.why-subheading .diamond {
+  color: var(--color-gold);
+  font-size: 14px;
+}
+
+.why-recommend {
+  margin-bottom: 80px;
+}
+
+.recommend-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.recommend-card {
+  background: white;
+  border: 1px solid rgba(212, 175, 55, 0.2);
+  border-radius: 12px;
+  padding: 40px 20px;
+  text-align: center;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.02);
+}
+
+.recommend-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(212, 175, 55, 0.15);
+  border-color: rgba(212, 175, 55, 0.5);
+}
+
+.rec-icon {
+  font-size: 40px;
+  margin-bottom: 20px;
+  line-height: 1;
+}
+
+.recommend-card h4 {
+  font-size: 20px;
+  color: var(--color-text-dark);
+  margin-bottom: 15px;
+}
+
+.recommend-card p {
+  font-size: 14px;
+  color: var(--color-text-muted-dark);
+  line-height: 1.6;
+  margin-bottom: 25px;
+  flex-grow: 1;
+}
+
+.rec-tag {
+  display: inline-block;
+  padding: 6px 15px;
+  background-color: rgba(212, 175, 55, 0.1);
+  color: var(--color-gold);
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.why-criteria {
+  margin-bottom: 60px;
+}
+
+.criteria-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.criteria-item {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background: white;
+  padding: 15px 30px;
+  border-radius: 8px;
+  border: 1px solid rgba(0,0,0,0.05);
+  gap: 20px;
+  transition: all 0.3s ease;
+}
+
+.criteria-item:hover {
+  border-color: rgba(212, 175, 55, 0.3);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+}
+
+.crit-icon {
+  font-size: 24px;
+}
+
+.criteria-item p {
+  font-size: 16px;
+  color: var(--color-text-dark);
+  margin: 0;
+  text-align: left;
+}
+
+.why-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  margin-top: 50px;
+}
+
+.why-disclaimer {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 20px 30px;
+  border-radius: 8px;
+  border: 1px solid rgba(0,0,0,0.05);
+  max-width: 800px;
+}
+
+.why-disclaimer .shield-icon-wrapper {
+  font-size: 24px;
+}
+
+.why-disclaimer .disclaimer-text strong {
+  display: block;
+  font-size: 14px;
+  color: var(--color-text-dark);
+  margin-bottom: 5px;
+}
+
+.why-disclaimer .disclaimer-text p {
+  font-size: 13px;
+  color: var(--color-text-muted-dark);
+  line-height: 1.6;
+  margin: 0;
+}
 
 @media (max-width: 992px) {
   #hero {
@@ -561,6 +747,10 @@ body {
     margin-top: 10px;
     margin-bottom: 20px; /* Reduce margin on mobile */
   }
+  
+  .recommend-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media (max-width: 768px) {
@@ -569,6 +759,25 @@ body {
   }
   .hero-desc {
     font-size: 14px;
+  }
+  .recommend-grid {
+    grid-template-columns: 1fr;
+  }
+  .why-title {
+    font-size: 32px;
+  }
+  .why-subheading {
+    font-size: 20px;
+  }
+  .criteria-item {
+    padding: 15px 20px;
+  }
+  .criteria-item p {
+    font-size: 14px;
+  }
+  .why-disclaimer {
+    flex-direction: column;
+    padding: 20px;
   }
 }
 
