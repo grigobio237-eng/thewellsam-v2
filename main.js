@@ -323,6 +323,113 @@ const cardDetailsData = [
   }
 ];
 
+const kbeautyDetailsData = [
+  {
+    tag: 'SKIN AESTHETICS',
+    title: '피부미용 (스킨부스터·리프팅)',
+    subtitle: 'Premium Skin Care',
+    concept: '프리미엄 스킨부스터, 리프팅, 타이트닝 등 가장 진보된 K-Beauty 시술을 통해 피부 깊은 곳의 코어 탄력을 세우고 압도적인 광채를 선사합니다. 단순한 표면 관리를 넘어 피부 본연의 힘을 길러 투명하게 빛나는 글래스 스킨(Glass Skin)을 완성합니다.',
+    conceptImage: '/kbeauty_skin.webp',
+    checklist: ['원하는 개선 포인트 (탄력, 미백, 모공 등)', '선호하는 시술 방식 (레이저, 스킨부스터)', '최근 피부과 시술 이력 및 반응', '평소 피부 타입 및 화장품 사용 패턴', '회복 기간에 대한 기대치 (다운타임)'],
+    mechanisms: [
+      {
+        title: '하이엔드 스킨부스터 & 광채 부여',
+        desc: '피부 진피층에 직접 유효 성분을 공급하여 메마른 피부 속부터 촘촘하게 수분을 채우고, 맑고 투명하게 빛나는 압도적인 광채(물광)를 연출합니다.',
+        image: '/kbeauty_skin_mech1.webp'
+      },
+      {
+        title: '비수술적 윤곽 타이트닝 & 리프팅',
+        desc: '늘어진 턱선과 피부 탄력을 끌어올려 탄탄한 V라인을 디자인합니다. 섬세한 시술로 피부 속 콜라겐 재생을 유도하여 쫀쫀하고 힘 있는 안면 윤곽을 완성합니다.',
+        image: '/kbeauty_skin_mech2.webp'
+      }
+    ],
+    effects: [
+      '화장품으로 구현할 수 없는 피부 속부터 우러나는 고급스러운 물광',
+      '늘어진 얼굴 라인의 즉각적인 타이트닝 및 V라인 정돈',
+      '피부결 개선, 모공 축소 및 맑고 투명한 안색 회복',
+      '콜라겐 밀도 증가를 통한 근본적인 코어 탄력 강화'
+    ]
+  },
+  {
+    tag: 'FACIAL SYMMETRY',
+    title: '안면비대칭·윤곽 교정',
+    subtitle: 'Balance & Alignment',
+    concept: '미세하게 틀어진 안면 비대칭과 무너진 윤곽 라인을 정교하게 교정하여, 어느 각도에서나 완벽한 비율과 자연스러운 미소를 되찾아드립니다. 인위적인 시술이 아닌 코어 근육과 근막의 밸런스를 회복하는 프리미엄 윤곽 교정입니다.',
+    conceptImage: '/kbeauty_symmetry.webp',
+    checklist: ['얼굴 좌우 대칭 및 라인 비대칭 정도', '턱관절 소리 또는 뻐근함 여부', '사진 촬영 시 신경 쓰이는 얼굴 각도', '과거 윤곽 시술 및 교정 이력', '원하는 최종 페이스 라인'],
+    mechanisms: [
+      {
+        title: '정교한 안면 코어 근막 이완',
+        desc: '비대칭을 유발하는 뭉친 안면 근육과 하관의 근막을 부드럽게 이완시켜 턱선과 목선으로 이어지는 림프 순환을 돕고 붓기를 제거합니다.',
+        image: '/kbeauty_sym_mech1.webp'
+      },
+      {
+        title: '수술 없이 완성하는 V라인 대칭 정렬',
+        desc: '뼈를 깎지 않고 근육의 본래 위치를 되찾아 주어 가장 이상적이고 조화로운 페이스 라인과 우아한 대칭을 완성합니다.',
+        image: '/kbeauty_sym_mech2.webp'
+      }
+    ],
+    effects: [
+      '좌우 대칭이 맞는 조화롭고 입체적인 얼굴 라인',
+      '사진 보정이 필요 없는 매끄러운 안면 윤곽',
+      '부자연스러운 턱선 및 목선의 우아한 실루엣 완성',
+      '인위적이지 않고 편안한 본연의 미소 회복'
+    ]
+  },
+  {
+    tag: 'POST-SURGERY CARE',
+    title: '성형수술 후 프리미엄 회복',
+    subtitle: 'Fast Recovery',
+    concept: '성형수술 후 민감해진 피부와 조직의 빠른 회복을 돕는 하이엔드 사후 관리 시스템입니다. 정체된 붓기와 멍을 효과적으로 배출하고, 수술로 디자인된 아름다운 라인이 가장 완벽하게 자리 잡을 수 있도록 섬세하게 케어합니다.',
+    conceptImage: '/kbeauty_rec_modal_concept.webp',
+    checklist: ['최근 수술 종류 및 부위', '수술 후 경과 시간', '붓기, 멍, 바이오본드(뭉침) 정도', '일상 및 직장 복귀 희망 일정', '기대하는 최종 회복 목표'],
+    mechanisms: [
+      {
+        title: '프리미엄 림프 순환 및 붓기·멍 배출',
+        desc: '최고급 에스테틱 디바이스와 전문 테라피를 결합하여 수술 후 정체된 림프의 순환을 촉진, 잔붓기와 멍을 신속하고 편안하게 배출합니다.',
+        image: '/kbeauty_rec_mech1.webp'
+      },
+      {
+        title: '바이오본드 예방 및 매끄러운 라인 안착',
+        desc: '수술 부위 조직이 단단하게 뭉치는 현상을 예방하고 손상된 피부의 재생을 유도하여, 디자인된 수술 라인이 완벽하게 안착되도록 돕습니다.',
+        image: '/kbeauty_rec_mech2.webp'
+      }
+    ],
+    effects: [
+      '잔붓기와 멍의 신속한 제거로 빠르고 편안한 일상 복귀',
+      '수술 부위 뭉침(바이오본드) 방지 및 매끄러운 라인 완성',
+      '피부 재생 촉진을 통한 자극 완화 및 코어 탄력 회복',
+      '수술 만족도를 최상으로 끌어올리는 하이엔드 애프터 케어'
+    ]
+  },
+  {
+    tag: 'PREMIUM DIET',
+    title: '프리미엄 바디 컨투어링',
+    subtitle: 'Body Silhouette',
+    concept: '단순한 체중 감량을 넘어, 불필요한 군살을 정돈하고 무너진 바디 라인을 매끄럽게 조각하는 하이엔드 바디 컨투어링입니다. 정체된 순환을 일깨우고 코어 탄력을 더해 품격 있고 완벽한 실루엣을 완성합니다.',
+    conceptImage: '/kbeauty_diet_modal_concept.webp',
+    checklist: ['목표 체중 및 희망하는 옷 사이즈', '집중적으로 관리하고 싶은 바디 부위 (복부, 팔뚝 등)', '평소 식습관, 수면 패턴 및 라이프스타일', '만성적인 부종(붓기) 및 순환 저하 여부', '과거 다이어트 경험 및 요요 발생 여부'],
+    mechanisms: [
+      {
+        title: '디테일한 바디 라인 조각 & 탄력 리프팅',
+        desc: '운동만으로는 빼기 힘든 국소 부위의 군살을 정리하고, 프리미엄 탄력 관리를 병행하여 급격한 감량 후에도 처짐 없는 쫀쫀하고 매끄러운 바디 라인을 디자인합니다.',
+        image: '/kbeauty_diet_mech1.webp'
+      },
+      {
+        title: '근본적인 대사 순환 및 부종(붓기) 케어',
+        desc: '정체된 림프와 혈액 순환을 촉진하여 만성적인 붓기를 제거하고 기초 대사량을 높여, 살이 잘 찌지 않는 건강하고 가벼운 체질로 개선합니다.',
+        image: '/kbeauty_diet_mech2.webp'
+      }
+    ],
+    effects: [
+      '국소 부위 군살 정리를 통한 완벽한 비율의 바디 실루엣',
+      '셀룰라이트 완화 및 쫀쫀하고 매끄러운 바디 피부결 완성',
+      '만성적인 붓기 및 부종의 근본적인 해소',
+      '건강한 대사 사이클 회복으로 요요 없는 체질 개선'
+    ]
+  }
+];
+
 function initDetailPages() {
   const overlay = document.getElementById('detail-overlay');
   if (!overlay) return;
@@ -337,9 +444,15 @@ function initDetailPages() {
   cards.forEach(card => {
     card.addEventListener('click', () => {
       const index = parseInt(card.getAttribute('data-card-index'), 10);
-      if (isNaN(index) || !cardDetailsData[index]) return;
+      if (isNaN(index)) return;
 
-      const data = cardDetailsData[index];
+      let data;
+      if (index < 4) {
+        data = cardDetailsData[index];
+      } else {
+        data = kbeautyDetailsData[index - 4];
+      }
+      if (!data) return;
 
       // Check if it's the new landing page format (has conceptImage)
       if (data.conceptImage) {
@@ -389,6 +502,12 @@ function initDetailPages() {
                 </ul>
               </div>
             </div>
+
+            <div class="sanctuary-cta-box" style="margin-top: 50px; padding-bottom: 40px; text-align: center;">
+              <button class="btn btn-luxury consultation-btn" onclick="openModal()">
+                상담 신청하기 <span class="arrow">→</span>
+              </button>
+            </div>
           </div>
         `;
       } else {
@@ -435,6 +554,12 @@ function initDetailPages() {
                   ${effectsHtml}
                 </ul>
               </div>
+            </div>
+            
+            <div class="sanctuary-cta-box" style="margin-top: 50px; text-align: center;">
+              <button class="btn btn-luxury consultation-btn" onclick="openModal()">
+                상담 신청하기 <span class="arrow">→</span>
+              </button>
             </div>
           </div>
 
