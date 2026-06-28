@@ -768,6 +768,10 @@ body {
 }
 
 @media (max-width: 768px) {
+  .sanctuary-parallax-wrapper {
+    padding: 60px 0;
+    min-height: auto;
+  }
   .sanctuary-text-wrap {
     padding: 0 24px;
   }

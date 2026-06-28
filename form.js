@@ -1,4 +1,4 @@
-const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwpEszmtAJXLU4m0HxMJwFH_PdbsbYa38nHRCr3U8GO8eqf0qVZxneVroMiGX2ZoIBpQQ/exec";
+const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwzkCC5H999A_gAXnnsvgtGO0WdyGqUBGr9xsxAiGRBXmd_x1uOyt82iDd-YGUPfWGQRA/exec";
 
 let step = 1;
 const totalSteps = 12;
@@ -125,16 +125,42 @@ window.submitFinal = async function() {
   isSubmitting = true;
   renderStep();
   
+  const payload = {
+    action: "final",
+    timestamp: new Date().toISOString(),
+    name: formData.name,
+    gender: formData.gender,
+    ageGroup: formData.ageGroup,
+    phone: formData.phone,
+    privacyConsent: formData.privacyConsent,
+    marketingConsent: formData.marketingConsent,
+    thirdPartyConsent: formData.thirdPartyConsent,
+    
+    // 카테고리 정보
+    mainCategory: formData.mainCategory,
+    subCategory: formData.subCategory,
+    track: formData.subCategory, // 구글 시트 '선택트랙' 호환용
+    
+    // 상세 질문 (JSON 문자열로 직렬화하여 전송)
+    subAnswers: JSON.stringify(formData.subAnswers),
+    details: JSON.stringify(formData.subAnswers), // 구글 시트 '상세상담(JSON)' 호환용
+    
+    // 공통 질문 (Root 레벨로 끌어올림)
+    medication: formData.commonAnswers.medication,
+    disease: formData.commonAnswers.disease,
+    sleep: formData.commonAnswers.sleep,
+    lifestyle: formData.commonAnswers.lifestyle,
+    
+    q11Date: formData.q11Date ? formData.q11Date.replace('T', ' ') : '',
+    q12Memo: formData.q12Memo
+  };
+
   try {
     await fetch(GOOGLE_SCRIPT_URL, {
       method: 'POST',
       mode: 'no-cors',
       headers: { 'Content-Type': 'text/plain' },
-      body: JSON.stringify({
-        action: "final",
-        timestamp: new Date().toISOString(),
-        ...formData
-      })
+      body: JSON.stringify(payload)
     });
     alert("상담 신청이 완료되었습니다. 전문 의료진이 확인 후 연락드리겠습니다.");
     closeModal();
