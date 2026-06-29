@@ -1765,7 +1765,8 @@ footer {
 /* 우측 플로팅 상담 풍선 (Floating Balloon) */
 .floating-balloon {
     position: fixed;
-    top: 10%; /* 상단에서 10% 위치 */
+    top: 50%; /* 우측 중간 위치 */
+    margin-top: -38px; /* 정확히 가운데 정렬을 위한 마진 (높이 76px의 절반) */
     right: 20px;
     width: 76px;
     height: 76px;
@@ -1831,7 +1832,8 @@ footer {
 /* 모바일 대응 미디어쿼리 */
 @media (max-width: 600px) {
     .floating-balloon {
-        top: 10%; /* 모바일에서도 동일하게 상단에서 10% 위치 */
+        top: 50%; /* 모바일에서도 동일하게 우측 중간 위치 */
+        margin-top: -34px; /* 높이 68px의 절반 */
         right: 15px; /* 화면 밖으로 밀리지 않도록 조정 */
         width: 68px;
         height: 68px;
